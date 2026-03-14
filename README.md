@@ -41,27 +41,38 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 - **Visualization**: Matplotlib, Seaborn
 - **Deployment**: Flask, Docker
 
+
 ## 📁 Project Structure
+
+```
 DeepGlaucoma-Detector/
-├── src/ # Source code modules
-│ ├── data_loader.py # Dataset classes
-│ ├── model.py # DenseNet121 architecture
-│ ├── train.py # Training functions
-│ ├── evaluate.py # Evaluation metrics
-│ ├── predict.py # Prediction functions
-│ └── utils.py # Helper utilities
 │
-├── notebooks/ # Jupyter notebooks
-│ ├── 01_data_preparation.ipynb
-│ ├── 02_model_training.ipynb
-│ ├── 03_evaluation.ipynb
-│ └── 04_prediction_demo.ipynb
+├── src/                          # Source code modules
+│   ├── data_loader.py            # Dataset classes
+│   ├── model.py                  # DenseNet121 architecture
+│   ├── train.py                  # Training functions
+│   ├── evaluate.py               # Evaluation metrics
+│   ├── predict.py                # Prediction functions
+│   └── utils.py                  # Helper utilities
 │
-├── deployment/ # Deployment files
-│ ├── flask_api.py
-│ └── Dockerfile
+├── notebooks/                    # Jupyter notebooks
+│   ├── 01_data_preparation.ipynb
+│   ├── 02_model_training.ipynb
+│   ├── 03_evaluation.ipynb
+│   └── 04_prediction_demo.ipynb
 │
-├── models/ # Trained models
-├── tests/ # Unit tests
-├── requirements.txt # Dependencies
-└── README.md # This file
+├── deployment/                   # Deployment files
+│   ├── flask_api.py
+│   └── Dockerfile
+│
+├── models/                       # Trained models
+│   └── best_model.pth            # Pre-trained weights
+│
+├── tests/                        # Unit tests
+│   ├── test_data.py
+│   ├── test_model.py
+│   └── test_prediction.py
+│
+├── requirements.txt              # Python dependencies
+└── README.md                     # This file
+```
