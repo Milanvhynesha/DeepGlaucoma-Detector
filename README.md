@@ -1,5 +1,3 @@
-# DeepGlaucoma-Detector
-GlaucomaDetect-AI: Automated Glaucoma Detection Using Deep LearningGlaucomaDetect-AI is a deep learning-based system that automatically detects glaucoma from eye fundus images. Built with PyTorch and MONAI, it uses a DenseNet121 architecture trained on clinical data to distinguish between glaucomatous and healthy eyes with high accuracy.
 # 👁️ DeepGlaucoma-Detector: Automated Glaucoma Detection Using Deep Learning
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
@@ -28,10 +26,10 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 
 | Metric | Value |
 |--------|-------|
-| **Accuracy** | ~90% |
-| **AUC-ROC** | ~0.95 |
-| **Sensitivity** | ~88% |
-| **Specificity** | ~92% |
+| Accuracy | ~90% |
+| AUC-ROC | ~0.95 |
+| Sensitivity | ~88% |
+| Specificity | ~92% |
 
 ## 🛠️ Technology Stack
 
@@ -41,3 +39,12 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 - **Visualization**: Matplotlib, Seaborn
 - **Deployment**: Flask, Docker
 
+## 🚀 Quick Start
+
+```python
+from src.predict import GlaucomaPredictor
+
+predictor = GlaucomaPredictor('models/best_model.pth')
+result = predictor.predict('eye_image.jpg')
+print(f"Diagnosis: {result['prediction']}")
+print(f"Confidence: {result['confidence']:.2%}")
