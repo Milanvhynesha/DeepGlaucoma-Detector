@@ -42,3 +42,26 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 - **Deployment**: Flask, Docker
 
 ## 📁 Project Structure
+DeepGlaucoma-Detector/
+├── src/ # Source code modules
+│ ├── data_loader.py # Dataset classes
+│ ├── model.py # DenseNet121 architecture
+│ ├── train.py # Training functions
+│ ├── evaluate.py # Evaluation metrics
+│ ├── predict.py # Prediction functions
+│ └── utils.py # Helper utilities
+│
+├── notebooks/ # Jupyter notebooks
+│ ├── 01_data_preparation.ipynb
+│ ├── 02_model_training.ipynb
+│ ├── 03_evaluation.ipynb
+│ └── 04_prediction_demo.ipynb
+│
+├── deployment/ # Deployment files
+│ ├── flask_api.py
+│ └── Dockerfile
+│
+├── models/ # Trained models
+├── tests/ # Unit tests
+├── requirements.txt # Dependencies
+└── README.md # This file
