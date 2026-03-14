@@ -43,8 +43,6 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 
 
 ## 📁 Project Structure
-
-```
 DeepGlaucoma-Detector/
 │
 ├── src/                          # Source code modules
@@ -75,4 +73,3 @@ DeepGlaucoma-Detector/
 │
 ├── requirements.txt              # Python dependencies
 └── README.md                     # This file
-```
