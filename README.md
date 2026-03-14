@@ -48,8 +48,16 @@ predictor = GlaucomaPredictor('models/best_model.pth')
 result = predictor.predict('eye_image.jpg')
 print(f"Diagnosis: {result['prediction']}")
 print(f"Confidence: {result['confidence']:.2%}")
+```
 
 ## 📦 Installation
 git clone https://github.com/Milanvhynesha/DeepGlaucoma-Detector.git
 cd DeepGlaucoma-Detector
 pip install -r requirements.txt
+
+## 📄 License
+MIT License
+
+## 📧 Contact
+Milanvhynesha - GitHub Profile
+
