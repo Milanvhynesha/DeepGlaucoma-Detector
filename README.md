@@ -44,10 +44,9 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 ```python
 from src.predict import GlaucomaPredictor
 
-predictor = GlaucomaPredictor('models/best_model.pth')
+predictor = GlaucomaPredictor('models/best_model.pth') # This line is now valid!
 result = predictor.predict('eye_image.jpg')
 print(f"Diagnosis: {result['prediction']}")
-print(f"Confidence: {result['confidence']:.2%}")
 ```
 
 ## 📦 Installation
