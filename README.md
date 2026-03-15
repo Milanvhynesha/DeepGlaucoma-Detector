@@ -26,10 +26,10 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | ~90% |
-| AUC-ROC | ~0.95 |
-| Sensitivity | ~88% |
-| Specificity | ~92% |
+| Accuracy | 65,3% |
+| Precision | 18,8% |
+| Sensitivity | 7,1% |
+| Specificity | 88% |
 
 ## 🛠️ Technology Stack
 
