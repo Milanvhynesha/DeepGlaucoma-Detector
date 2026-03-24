@@ -24,12 +24,27 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 
 ## 📊 Model Performance
 
+The model was evaluated on a held-out test set of 150 fundus images:
+
 | Metric | Value |
 |--------|-------|
-| Accuracy | 65,3% |
-| Precision | 18,8% |
-| Sensitivity | 7,1% |
-| Specificity | 88% |
+| Accuracy | 65.3% |
+| Sensitivity (Glaucoma) | 7.1% |
+| Specificity (Glaucoma) | 92.9% |
+| Precision (Glaucoma) | 18.8% |
+| AUC | 0.623 |
+
+**Important Limitations:** The model shows significant bias toward predicting non-glaucoma (majority class), with a false negative rate of 92.9% for glaucoma cases. This model is not ready for clinical deployment without further improvements to address class imbalance.
+
+## 📁 Dataset
+
+- **Total images:** 747 fundus photographs
+- **Distribution:** 247 non-glaucoma, 500 glaucoma
+- **Split (stratified):**
+  - Training: 477 images (185 non-glaucoma, 292 glaucoma)
+  - Validation: 120 images
+  - Testing: 150 images
+
 
 ## 🛠️ Technology Stack
 
@@ -38,6 +53,14 @@ DeepGlaucoma-Detector is a deep learning-based system that automatically detects
 - **Data Science**: NumPy, Pandas, Scikit-learn
 - **Visualization**: Matplotlib, Seaborn
 - **Deployment**: Flask, Docker
+
+## 🔍 Model Interpretability
+
+Grad-CAM visualizations confirm the model focuses on clinically relevant regions (optic disc and RNFL), even when predictions are incorrect. This provides:
+- **Clinical trust:** Heatmaps align with ophthalmologist evaluation criteria
+- **Debugging capability:** Visual verification of model attention
+- **Research value:** Understanding failure modes despite class imbalance
+
 
 ## 🚀 Quick Start
 
